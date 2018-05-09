@@ -1,5 +1,5 @@
 
-# vueShiptTarget
+# vueShiptExercise
 
 > A frontend, exercise project for Shipt, made with Vue.js. 
 
