@@ -84,7 +84,6 @@
 </template>
 
 <script>
-import MainExclusiveOffer from '~/components/MainExclusiveOffer.vue'
 import axios from 'axios'
 import moment from 'moment'
 
@@ -99,11 +98,21 @@ export default {
       })
     }
   },
+  created: function () {
+    this.preloadImgs();
+  },
   mounted: function () {
+    // Set form focus
     this.$nextTick(() => this.$refs.searchZip.focus())
   },
   data: function () {
     return {
+      images: [
+        'pointer-blk.jpg', 
+        'pointer-grey.jpg', 
+        'pointer-orange.jpg', 
+        'form-exclamation.jpg'
+      ],
       results: {},
       showError: false,
       zipcode: '',
@@ -132,8 +141,7 @@ export default {
       });
     },
     checkIfNum: function (evt) {
-      // Accept only numbers
-      // Sourced from Deendayal Garg, via. Stackoverflow
+      // Accept only numbers, sourced from Deendayal Garg, via. Stackoverflow
       evt = (evt) ? evt : window.event;
       
       var charCode = (evt.which) ? evt.which : evt.keyCode;
@@ -152,6 +160,15 @@ export default {
       } else {
         return 'Coming ' + (Number(launchDate.format('m') + 1)) + '/' + launchDate.format('YY')
       }
+    },
+    preloadImgs: function () {
+      // Preload form images
+      const images = this.images
+
+      images.forEach(function (imgName) {
+        let image = new Image()
+        image.src = imgName
+      })
     }
   }
 }
