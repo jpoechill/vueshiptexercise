@@ -17,12 +17,7 @@ The live demo can be seen at: [http://porith-vueshiptexercise.tk/](http://porith
  – For parsing and managing calculation in time
 * [Axios.js](https://www.npmjs.com/package/axios) – For making and retrieving from data from API calls
 
-----
-### Thank you
-* Po Rith
-
-
-## Build Setup
+### Build Setup
 
 ``` bash
 # install dependencies
@@ -38,4 +33,8 @@ $ yarn start
 # generate static project
 $ yarn run generate
 ```
+
+----
+### Thank you
+* Po Rith
 
