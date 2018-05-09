@@ -58,16 +58,24 @@ export default {
     margin: 30px 0px 20px 0px;
   }
 
+  .cta-main {
+    height: 60px;
+    border-radius: 0px 2px 2px 0px;
+  }
+
   .cta-lrg {
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .5);
     margin: 40px 0px 60px 0px;
     width: 320px;
     height: 60px;
   }
+  
+  /* / Media Queries /  */
 
-  .cta-main {
-    height: 60px;
-    border-radius: 0px 2px 2px 0px;
+  @media only screen and (max-width: 600px) {
+    .cta-lrg {
+      width: 100%;
+    }
   }
 
   /* / Vue Transitions (Animations) /  */
@@ -78,4 +86,5 @@ export default {
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;
   }
+
 </style>
