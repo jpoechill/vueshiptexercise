@@ -5,7 +5,7 @@
 
 ### Demo
 
-The live demo can be seen at: [http://porith-vueshiptexercise.tk/](http://porith-vueshiptexercise.tk/)
+[http://porith-vueshiptexercise.tk/](http://porith-vueshiptexercise.tk/)
 
 ### Frameworks and resources
 
