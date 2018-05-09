@@ -1,6 +1,26 @@
+
 # vueShiptTarget
 
-> My swell Nuxt.js project
+> A frontend, exercise project for Shipt, made with Vue.js. 
+
+### Demo
+
+The live demo can be seen at: [http://porith-vueshiptexercise.tk/](http://porith-vueshiptexercise.tk/)
+
+### Frameworks and resources
+
+* [Vue.js](https://vuejs.org/) 
+ – Primary frontend, JS framework
+* [Nuxt.js](https://nuxtjs.org/)  – Support for creating server-rendered Vue apps
+* [Bootstrap 4](https://getbootstrap.com/)  – Frontend, HTML/CSS framework
+* [Moment.js](https://momentjs.com/) 
+ – For parsing and managing calculation in time
+* [Axios.js](https://www.npmjs.com/package/axios) – For making and retrieving from data from API calls
+
+----
+### Thank you
+* Po Rith
+
 
 ## Build Setup
 
@@ -19,4 +39,3 @@ $ yarn start
 $ yarn run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
